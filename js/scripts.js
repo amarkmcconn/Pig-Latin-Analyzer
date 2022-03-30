@@ -1,9 +1,13 @@
 function vowelManipulator(text) {
-  const firstLetter = text.charAt(0).toLowerCase();
-  console.log(firstLetter)
-  if (firstLetter === "a" || firstLetter === "e" || firstLetter === "i" || firstLetter === "o" || firstLetter === "u") {
-    return true
-  } else
-    return false
+  const wordArray = text.split(" ")
+  console.log(wordArray)
+  wordArray.forEach((word)=>{
+    const firstLetter = word.charAt(0).toLowerCase();
+    if (firstLetter === "a" || firstLetter === "e" || firstLetter === "i" || firstLetter === "o" || firstLetter === "u") {
+      console.log(word)  
+    } else {
+
+    }
+  })
 }
   
