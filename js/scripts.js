@@ -52,17 +52,20 @@ function consonantsManipulator(text) {
 }
 
 function quManipulator(text) {
-  const firstLetter = text.charAt(0).toLowerCase()
-  if (firstLetter === "q") {
-    const secondLetter = text.charAt(1).toLowerCase();
-    if(secondLetter === "u"){
-      return true;
+  const wordArray = text.split(" ")
+  wordArray.forEach((word)=>{
+    const firstLetter = word.charAt(0).toLowerCase()
+    if (firstLetter === "q") {
+      const secondLetter = word.charAt(1).toLowerCase();
+      if(secondLetter === "u"){
+        console.log(word);
+      }else {
+        const newWord = consonantsManipulator(word);
+      }
     }else {
-      const newWord = consonantsManipulator(text);
+      return false
     }
-  }else {
-    return false
-  }
+  })
 }
   
 
