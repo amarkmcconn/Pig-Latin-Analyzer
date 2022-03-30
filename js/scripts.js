@@ -53,6 +53,7 @@ function consonantsManipulator(text) {
 
 function quManipulator(text) {
   const wordArray = text.split(" ")
+  let finalSentence = [];
   wordArray.forEach((word)=>{
     const firstLetter = word.charAt(0).toLowerCase()
     if (firstLetter === "q") {
@@ -61,15 +62,24 @@ function quManipulator(text) {
         const wordPair = [word.substring(0, 2) , word.substring(2)];
         wordPair.reverse();
         const letterMover = wordPair.join("");
-        console.log(letterMover);
+        const finalWord = letterMover + "ay";
+        finalSentence.push(finalWord);
       }else {
         const newWord = consonantsManipulator(word);
+        finalSentence.push(newWord);
       }
     }else {
-      return false
+      finalSentence.push(word);
     }
   })
+  const sentenceString = finalSentence.join(" ");
+  return sentenceString;
 }
+
+
+$(document).ready(function() {
+  $("#form")
+})
   
 
 
