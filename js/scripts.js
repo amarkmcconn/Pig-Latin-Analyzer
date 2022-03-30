@@ -13,4 +13,11 @@ function vowelManipulator(text) {
   const sentenceString = finalSentence.join(" ");
   return sentenceString;
 }
-  
+
+function consonantsManipulator(text) {
+  if (text !== "a" && text !==  "e" && text !==  "i" && text !==  "o" && text !==  "u" && text !== "q") {
+    return true
+  } else {
+    return false
+  }
+}
