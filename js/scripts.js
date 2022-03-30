@@ -58,7 +58,10 @@ function quManipulator(text) {
     if (firstLetter === "q") {
       const secondLetter = word.charAt(1).toLowerCase();
       if(secondLetter === "u"){
-        console.log(word);
+        const wordPair = [word.substring(0, 2) , word.substring(2)];
+        wordPair.reverse();
+        const letterMover = wordPair.join("");
+        console.log(letterMover);
       }else {
         const newWord = consonantsManipulator(word);
       }
