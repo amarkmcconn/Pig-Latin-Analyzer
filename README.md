@@ -51,7 +51,7 @@ Code: vowelManipulator("APPLE");
 Expected Output: True
 
 Test: "It recognizes if a single word starts with a vowel regardless of punctuation."
-Code: vowelManipulator("apple");
+Code: vowelManipulator("apple.");
 Expected Output: True
 
 Test: "It recognizes multiple words that start with a vowel."
