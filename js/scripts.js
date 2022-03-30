@@ -25,6 +25,7 @@ function vowelManipulator(text) {
 
 function consonantsManipulator(text) {
   const wordArray = text.split(" ")
+  let finalSentence = [];
   wordArray.forEach((word)=>{
     const firstLetter = word.charAt(0).toLowerCase();
     if (NotAVowel(firstLetter)) {
@@ -40,11 +41,15 @@ function consonantsManipulator(text) {
       const wordPair = [word.substring(0, consonantLength) , word.substring(consonantLength)];
       wordPair.reverse();
       const letterMover = wordPair.join("");
-      const finalWord = letterMover + "ay"
-      console.log(finalWord)
+      const finalWord = letterMover + "ay";
+      finalSentence.push(finalWord);
     } else {
-      
+      finalSentence.push(word);
     }
   })
+  const sentenceString = finalSentence.join(" ");
+  return sentenceString;
 }
+
+
 
