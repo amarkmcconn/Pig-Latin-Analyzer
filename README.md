@@ -119,40 +119,40 @@ Expected Output: I ovelay arscay
 
 Describle:  quManipulator();
 
-Test: "It recognizes qu consonant."
-Code: consonantsManipulator("qu");
+Test 1: "It recognizes qu consonant."
+Code: quManipulator("qu");
 Expected Output: True
 
-Test: "It recognizes a single word starts with a qu"
-Code: consonantsManipulator("quick");
+Test 2: "It recognizes a single word starts with a qu"
+Code: quManipulator("quick");
 Expected Output: True
 
-Test: "It recognizes a single word starts with qu regardless of capitalization"
-Code: consonantsManipulator("QUICK");
+Test 3: "It recognizes a single word starts with qu regardless of capitalization"
+Code: quManipulator("QUICK");
 Expected Output: True
 
-Test: "It recognizes a single word starts with qu regardless of punctuation"
-Code: consonantsManipulator("quick,");
+Test 4: "It recognizes a single word starts with qu regardless of punctuation"
+Code: quManipulator("quick,");
 Expected Output: True
 
-Test: "It recognizes multiple words that start with a qu"
-Code: consonantsManipulator("a quick quiet quack");
+Test 5: "It recognizes multiple words that start with a qu"
+Code: quManipulator("a quick quiet quack");
 Expected Output: quick, quiet, quack
 
-Test: "It recognizes single word that start with qu & move the qu to the end"
-Code: consonantsManipulator("quick");
+Test 6: "It recognizes single word that start with qu & move the qu to the end"
+Code: quManipulator("quick");
 Expected Output: ickqu
 
-Test: "It recognizes multiple words that start with a qu & move the qu to the end"
-Code: consonantsManipulator("a quick quiet quack");
+Test 7: "It recognizes multiple words that start with a qu & move the qu to the end"
+Code: quManipulator("a quick quiet quack");
 Expected Output: ickqu, ietqu, ackqu
 
-Test: "It recognizes multiple words that start with a au & move the au to the end & add "ay""
-Code: consonantsManipulator("a quick quiet quack");
+Test 8: "It recognizes multiple words that start with a au & move the au to the end & add "ay""
+Code: quManipulator("a quick quiet quack");
 Expected Output: ickquay, ietquay, ackquay
 
-Test: "return the whole sentence with the editied words."
-Code: consonantsManipulator("a quick quiet quack");
+Test 9: "return the whole sentence with the editied words."
+Code: quManipulator("a quick quiet quack");
 Expected Output: a ickquay ietquay ackquay.
 
 ```

@@ -51,5 +51,19 @@ function consonantsManipulator(text) {
   return sentenceString;
 }
 
+function quManipulator(text) {
+  const firstLetter = text.charAt(0).toLowerCase()
+  if (firstLetter === "q") {
+    const secondLetter = text.charAt(1).toLowerCase();
+    if(secondLetter === "u"){
+      return true;
+    }else {
+      const newWord = consonantsManipulator(text);
+    }
+  }else {
+    return false
+  }
+}
+  
 
 
