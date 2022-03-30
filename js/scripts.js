@@ -1,4 +1,4 @@
-// UI Logic
+// Utility Logic
 
 function NotAVowel(letter){
    if (letter !== "a" && letter !==  "e" && letter !==  "i" && letter !==  "o" && letter !==  "u" && letter !== "q"){
@@ -53,7 +53,6 @@ function consonantsManipulator(text) {
   })
   const sentenceString = finalSentence.join(" ");
   return sentenceString;
-  console.log(sentenceString)
 }
 
 function quManipulator(text) {
