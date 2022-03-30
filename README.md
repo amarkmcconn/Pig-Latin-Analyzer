@@ -35,62 +35,124 @@ Expected Output: 7
 
 # Specs
 * Vowel function
-1. recognize a single vowel 
-Input: a Ouput: True
-2. recognize if a single word starts with a vowel 
-Input: apple  Ouput: True
-3. recognize if a single word starts with a vowel regardless of capitalization
-Input: APPLE Ouput: True
-4. recognize if a single word starts with a vowel regardless of punctuation
-Input: apple. Ouput: True
-5. recognize multiple words that start with a vowel
-Input: I am the apple Ouput: I, am, apple
-6. recognize if a single word starts with a vowel and add 'way' to the end of the word
-Input: apple Ouput: appleway
-7. recognize multiple words that start with a vowel and add 'way' to the end of those words
-Input: I am the apple Ouput: Iway, amway, appleway
-8. return the whole sentence with the editied words.
-Input: I am the apple Ouput: Iway amway the appleway
+
+Describle:  vowelManipulator();
+
+Test: "It recognizes a single vowel."
+Code: vowelManipulator("a");
+Expected Output: True
+
+Test: "It recognizes if a single word starts with a vowel ."
+Code: vowelManipulator("apple");
+Expected Output: True
+
+Test: "It recognizes if a single word starts with a vowel regardless of capitalization."
+Code: vowelManipulator("APPLE");
+Expected Output: True
+
+Test: "It recognizes if a single word starts with a vowel regardless of punctuation."
+Code: vowelManipulator("apple");
+Expected Output: True
+
+Test: "It recognizes multiple words that start with a vowel."
+Code: vowelManipulator("I am the apple");
+Expected Output: I, am, apple
+
+Test: "It recognizes if a single word starts with a vowel and add 'way' to the end of the word."
+Code: vowelManipulator("apple");
+Expected Output: appleway
+
+Test: "It recognizes multiple words that start with a vowel and add 'way' to the end of those words."
+Code: vowelManipulator("I am the apple");
+Expected Output: Iway, amway, appleway
+
+Test: "return the whole sentence with the editied words."
+Code: vowelManipulator("I am the apple");
+Expected Output: Iway amway the appleway
+
 
 * Consonants function
-1. recognize a single consonant
-Input: c Output: True
-2. recognize a single word starts with a consonant
-Input: car Output: True
-3. recognize a single word starts with a consonant regardless of capitalization
-Input: CAR Output: True
-4. recognize a single word starts with a consonant regardless of punctuation
-Input: car. Output: True
-5. recognize multiple words that start with a consonant
-Input: I love cars Output: love, cars
-6. recognize single word that start with a consonant & move the consonant to the end
-Input: cars Output: arsc
-7. recognize single word that start with a consonant & move the consonant to the end & add "ay"
-Input: cars Output: arscay
-8. recognize multiple words that start with a consonant & move the consonant to the end
-Input: I love cars Ouput: ovel, arsc
-9. recognize multiple words that start with a consonant & move the consonant to the end & add "ay"
-Input: I love cars Ouput: ovelay, arscay
-10. return the whole sentence with the editied words.
-Input: I love cars Ouput: I ovelay arscay.
+
+Describle:  consonantsManipulator();
+
+Test: "It recognizes a single consonant"
+Code: consonantsManipulator("c");
+Expected Output: True
+
+Test: "It recognizes a single word starts with a consonant"
+Code: consonantsManipulator("car");
+Expected Output: True
+
+Test: "It recognizes a single word starts with a consonant regardless of capitalization"
+Code: consonantsManipulator("CAR");
+Expected Output: True
+
+Test: "It recognizes a single word starts with a consonant regardless of punctuation"
+Code: consonantsManipulator("car.");
+Expected Output: True
+
+Test: "It recognizes multiple words that start with a consonant"
+Code: consonantsManipulator("I love cars");
+Expected Output: love, cars
+
+Test: "It recognizes single word that start with a consonant & move the consonant to the end"
+Code: consonantsManipulator("cars");
+Expected Output: arsc
+
+Test: "It recognizes single word that start with a consonant & move the consonant to the end & add "ay""
+Code: consonantsManipulator("cars");
+Expected Output: arscay
+
+Test: "It recognizes multiple words that start with a consonant & move the consonant to the end"
+Code: consonantsManipulator("I love cars");
+Expected Output: ovel, arsc
+
+Test: "It recognizes multiple words that start with a consonant & move the consonant to the end & add "ay""
+Code: consonantsManipulator("I love cars");
+Expected Output: ovelay, arscay
+
+Test: "return the whole sentence with the editied words."
+Code: consonantsManipulator("I love cars");
+Expected Output: I ovelay arscay
 
 * Qu function
-1. recognize qu consonant
-Input: qu Output: True
-2. recognize a single word starts with a qu
-Input: quick Output: True
-3. recognize a single word starts with qu regardless of capitalization
-Input: QUICK Output: True
-4. recognize a single word starts with qu regardless of punctuation
-Input: quick, Output: True
-5. recognize multiple words that start with a qu
-Input: a quick quiet quack Output: quick, quiet, quack
-6. recognize single word that start with qu & move the qu to the end
-Input: quick Output: ickqu
-7. recognize multiple words that start with a qu & move the qu to the end
-Input: a quick quiet quack Output: ickqu, ietqu, ackqu
-8. recognize multiple words that start with a au & move the au to the end & add "ay"
-Input: a quick quiet quack Output: ickquay, ietquay, ackquay
-9. return the whole sentence with the editied words.
-Input: a quick quiet quack Ouput: a ickquay ietquay ackquay.
+
+Describle:  quManipulator();
+
+Test: "It recognizes qu consonant."
+Code: consonantsManipulator("qu");
+Expected Output: True
+
+Test: "It recognizes a single word starts with a qu"
+Code: consonantsManipulator("quick");
+Expected Output: True
+
+Test: "It recognizes a single word starts with qu regardless of capitalization"
+Code: consonantsManipulator("QUICK");
+Expected Output: True
+
+Test: "It recognizes a single word starts with qu regardless of punctuation"
+Code: consonantsManipulator("quick,");
+Expected Output: True
+
+Test: "It recognizes multiple words that start with a qu"
+Code: consonantsManipulator("a quick quiet quack");
+Expected Output: quick, quiet, quack
+
+Test: "It recognizes single word that start with qu & move the qu to the end"
+Code: consonantsManipulator("quick");
+Expected Output: ickqu
+
+Test: "It recognizes multiple words that start with a qu & move the qu to the end"
+Code: consonantsManipulator("a quick quiet quack");
+Expected Output: ickqu, ietqu, ackqu
+
+Test: "It recognizes multiple words that start with a au & move the au to the end & add "ay""
+Code: consonantsManipulator("a quick quiet quack");
+Expected Output: ickquay, ietquay, ackquay
+
+Test: "return the whole sentence with the editied words."
+Code: consonantsManipulator("a quick quiet quack");
+Expected Output: a ickquay ietquay ackquay.
+
 ```
