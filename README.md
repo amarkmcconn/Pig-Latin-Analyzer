@@ -38,35 +38,35 @@ Expected Output: 7
 
 Describle:  vowelManipulator();
 
-Test: "It recognizes a single vowel."
+Test 1: "It recognizes a single vowel."
 Code: vowelManipulator("a");
 Expected Output: True
 
-Test: "It recognizes if a single word starts with a vowel ."
+Test 2: "It recognizes if a single word starts with a vowel ."
 Code: vowelManipulator("apple");
 Expected Output: True
 
-Test: "It recognizes if a single word starts with a vowel regardless of capitalization."
+Test 3: "It recognizes if a single word starts with a vowel regardless of capitalization."
 Code: vowelManipulator("APPLE");
 Expected Output: True
 
-Test: "It recognizes if a single word starts with a vowel regardless of punctuation."
+Test 4: "It recognizes if a single word starts with a vowel regardless of punctuation."
 Code: vowelManipulator("apple.");
 Expected Output: True
 
-Test: "It recognizes multiple words that start with a vowel."
+Test 5: "It recognizes multiple words that start with a vowel."
 Code: vowelManipulator("I am the apple");
 Expected Output: I, am, apple
 
-Test: "It recognizes if a single word starts with a vowel and add 'way' to the end of the word."
+Test 6: "It recognizes if a single word starts with a vowel and add 'way' to the end of the word."
 Code: vowelManipulator("apple");
 Expected Output: appleway
 
-Test: "It recognizes multiple words that start with a vowel and add 'way' to the end of those words."
+Test 7: "It recognizes multiple words that start with a vowel and add 'way' to the end of those words."
 Code: vowelManipulator("I am the apple");
 Expected Output: Iway, amway, appleway
 
-Test: "return the whole sentence with the editied words."
+Test 8: "return the whole sentence with the editied words."
 Code: vowelManipulator("I am the apple");
 Expected Output: Iway amway the appleway
 
