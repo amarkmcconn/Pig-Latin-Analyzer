@@ -4,7 +4,8 @@ function vowelManipulator(text) {
   wordArray.forEach((word)=>{
     const firstLetter = word.charAt(0).toLowerCase();
     if (firstLetter === "a" || firstLetter === "e" || firstLetter === "i" || firstLetter === "o" || firstLetter === "u") {
-      console.log(word)  
+      const wayWord = word + "way"
+      console.log(wayWord)  
     } else {
 
     }
