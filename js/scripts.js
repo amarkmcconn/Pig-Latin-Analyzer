@@ -1,3 +1,12 @@
+function NotAVowel(letter){
+   if (letter !== "a" && letter !==  "e" && letter !==  "i" && letter !==  "o" && letter !==  "u" && letter !== "q"){
+    return true
+   }else {
+    return false
+   }
+}
+
+
 function vowelManipulator(text) {
   const wordArray = text.split(" ")
   let finalSentence = [];
@@ -18,11 +27,23 @@ function consonantsManipulator(text) {
   const wordArray = text.split(" ")
   wordArray.forEach((word)=>{
     const firstLetter = word.charAt(0).toLowerCase();
-    if (firstLetter !== "a" && firstLetter !==  "e" && firstLetter !==  "i" && firstLetter !==  "o" && firstLetter !==  "u" && firstLetter !== "q") {
-      console.log(word)
+    if (NotAVowel(firstLetter)) {
+      let consonantLength = 1;
+      for (let i = 1; i < word.length; i++) {
+        const letter = word.charAt(i).toLowerCase();
+        if (NotAVowel(letter)){
+          consonantLength++;
+        }else {
+          break;
+        }
+      }
+      const wordPair = [word.substring(0, consonantLength) , word.substring(consonantLength)];
+      wordPair.reverse();
+      const letterMover = wordPair.join("");
+      console.log(letterMover)
     } else {
       
-    } 
-    })
-
+    }
+  })
 }
+
