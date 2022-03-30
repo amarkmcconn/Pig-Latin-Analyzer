@@ -15,7 +15,8 @@ function vowelManipulator(text) {
 }
 
 function consonantsManipulator(text) {
-  if (text !== "a" && text !==  "e" && text !==  "i" && text !==  "o" && text !==  "u" && text !== "q") {
+  const firstLetter = text.charAt(0).toLowerCase();
+  if (firstLetter !== "a" && firstLetter !==  "e" && firstLetter !==  "i" && firstLetter !==  "o" && firstLetter !==  "u" && firstLetter !== "q") {
     return true
   } else {
     return false
