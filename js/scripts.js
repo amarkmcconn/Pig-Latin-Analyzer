@@ -40,7 +40,8 @@ function consonantsManipulator(text) {
       const wordPair = [word.substring(0, consonantLength) , word.substring(consonantLength)];
       wordPair.reverse();
       const letterMover = wordPair.join("");
-      console.log(letterMover)
+      const finalWord = letterMover + "ay"
+      console.log(finalWord)
     } else {
       
     }
