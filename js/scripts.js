@@ -1,3 +1,5 @@
+// UI Logic
+
 function NotAVowel(letter){
    if (letter !== "a" && letter !==  "e" && letter !==  "i" && letter !==  "o" && letter !==  "u" && letter !== "q"){
     return true
@@ -6,6 +8,7 @@ function NotAVowel(letter){
    }
 }
 
+// Business Logic
 
 function vowelManipulator(text) {
   const wordArray = text.split(" ")
@@ -21,6 +24,7 @@ function vowelManipulator(text) {
   })
   const sentenceString = finalSentence.join(" ");
   return sentenceString;
+  console.log(sentenceString)
 }
 
 function consonantsManipulator(text) {
@@ -49,6 +53,7 @@ function consonantsManipulator(text) {
   })
   const sentenceString = finalSentence.join(" ");
   return sentenceString;
+  console.log(sentenceString)
 }
 
 function quManipulator(text) {
@@ -74,11 +79,21 @@ function quManipulator(text) {
   })
   const sentenceString = finalSentence.join(" ");
   return sentenceString;
+  console.log(sentenceString)
 }
 
+// UI Logic
 
 $(document).ready(function() {
-  $("#form")
+  $("#form").submit((event) => {
+    event.preventDefault();
+    const text = $("#sentence-input").val();
+    console.log(text);
+    const vowelString = vowelManipulator(text);
+    const constantString = consonantsManipulator(vowelString);
+    const quString = quManipulator(constantString);
+    $("#output").text(quString)
+  }) 
 })
   
 
