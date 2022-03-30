@@ -15,10 +15,14 @@ function vowelManipulator(text) {
 }
 
 function consonantsManipulator(text) {
-  const firstLetter = text.charAt(0).toLowerCase();
-  if (firstLetter !== "a" && firstLetter !==  "e" && firstLetter !==  "i" && firstLetter !==  "o" && firstLetter !==  "u" && firstLetter !== "q") {
-    return true
-  } else {
-    return false
-  }
+  const wordArray = text.split(" ")
+  wordArray.forEach((word)=>{
+    const firstLetter = word.charAt(0).toLowerCase();
+    if (firstLetter !== "a" && firstLetter !==  "e" && firstLetter !==  "i" && firstLetter !==  "o" && firstLetter !==  "u" && firstLetter !== "q") {
+      console.log(word)
+    } else {
+      
+    } 
+    })
+
 }

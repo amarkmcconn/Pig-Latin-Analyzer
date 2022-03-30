@@ -75,43 +75,43 @@ Expected Output: Iway amway the appleway
 
 Describle:  consonantsManipulator();
 
-Test: "It recognizes a single consonant"
+Test 1: "It recognizes a single consonant"
 Code: consonantsManipulator("c");
 Expected Output: True
 
-Test: "It recognizes a single word starts with a consonant"
+Test 2: "It recognizes a single word starts with a consonant"
 Code: consonantsManipulator("car");
 Expected Output: True
 
-Test: "It recognizes a single word starts with a consonant regardless of capitalization"
+Test 3: "It recognizes a single word starts with a consonant regardless of capitalization"
 Code: consonantsManipulator("CAR");
 Expected Output: True
 
-Test: "It recognizes a single word starts with a consonant regardless of punctuation"
+Test 4: "It recognizes a single word starts with a consonant regardless of punctuation"
 Code: consonantsManipulator("car.");
 Expected Output: True
 
-Test: "It recognizes multiple words that start with a consonant"
+Test 5: "It recognizes multiple words that start with a consonant"
 Code: consonantsManipulator("I love cars");
 Expected Output: love, cars
 
-Test: "It recognizes single word that start with a consonant & move the consonant to the end"
+Test 6: "It recognizes single word that start with a consonant & move the consonant to the end"
 Code: consonantsManipulator("cars");
 Expected Output: arsc
 
-Test: "It recognizes single word that start with a consonant & move the consonant to the end & add "ay""
+Test 7: "It recognizes single word that start with a consonant & move the consonant to the end & add "ay""
 Code: consonantsManipulator("cars");
 Expected Output: arscay
 
-Test: "It recognizes multiple words that start with a consonant & move the consonant to the end"
+Test 8: "It recognizes multiple words that start with a consonant & move the consonant to the end"
 Code: consonantsManipulator("I love cars");
 Expected Output: ovel, arsc
 
-Test: "It recognizes multiple words that start with a consonant & move the consonant to the end & add "ay""
+Test 9: "It recognizes multiple words that start with a consonant & move the consonant to the end & add "ay""
 Code: consonantsManipulator("I love cars");
 Expected Output: ovelay, arscay
 
-Test: "return the whole sentence with the editied words."
+Test 10: "return the whole sentence with the editied words."
 Code: consonantsManipulator("I love cars");
 Expected Output: I ovelay arscay
 
