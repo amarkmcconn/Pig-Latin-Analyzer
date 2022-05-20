@@ -39,7 +39,7 @@ __________________________________
 ## Contact Information
 mark.programming1@gmail.com
 
-Copyright (c) _2022_ _James & Mark McConnell_
+Copyright (c) _2022_ _James Fox & Mark McConnell_
 
 
 ```javascript
