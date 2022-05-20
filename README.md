@@ -1,3 +1,47 @@
+# Pig Latin Analyzer 👾
+
+## By James Fox & Mark McConnell
+_____________________________
+
+### Project Discription 📖
+  * Pig Latin is a language game that involves adding imaginary endings to real English words. This application turns words into Pig Latin. 
+  
+  _____________________________
+
+### Technologies Used 🖥️
+
+* HTML
+* CSS
+* JavaScript
+* jQuery
+* Bootstrap
+
+_______________________________
+
+### Installation Instructions 🖊️
+
+* Clone this respository onto your desktop
+* Navigate to the top level of the directory
+* Open the index.html file in your web browser
+________________________________
+
+### Known Bugs 🐛
+
+* _No known bugs._
+* _If you should find any bugs open a pull request, or email._
+__________________________________
+
+## License
+
+[GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html)
+__________________________________
+
+## Contact Information
+mark.programming1@gmail.com
+
+Copyright (c) _2022_ _James & Mark McConnell_
+
+
 ```javascript
 # Warm Up
 Test: "It recognizes a single vowel."
